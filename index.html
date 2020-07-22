@@ -1,29 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-         <link rel="apple-touch-icon" href="images/icon-152.png">  
-      <meta name="theme-color" content="white"/>  
-      <meta name="apple-mobile-web-app-capable" content="yes"> 
-      <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-      <meta name="apple-mobile-web-app-title" content="AIMC">
-      <meta name="msapplication-TileImage" content="images/icon-144.png">  
-<meta name="msapplication-TileColor" content="#FFFFFF">
-       <meta name="descriptison" content="Healthcare, Medical, Hospital, Ayurveda, Allopathy, Physiotherappy, Hijama, Rehabilitation">
-    <meta name="keywords" content="healthcare, medical, hospital, doctor, bootstrap, creative, landing page, multipurpose, product, responsive, clinic template">
-    <meta name="author" content="Vrishank Softtech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/icon-152.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AIMC">
+    <meta name="msapplication-TileImage" content="images/icon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="descriptison" content="Healthcare, Medical, Hospital, Ayurveda, Allopathy, Physiotherappy, Hijama, Rehabilitation">
+    <meta name="keywords" content="healthcare, medical, hospital, doctor ">
+    <meta name="author" content="Al Ihsan Medical Center">
     <!-- Site Title -->
     <title>Al-Ihsan Medical Centre </title>
- <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-    <!-- <script type="text/javascript" src="jquery-3.3.1.js"></script>-->
     <!-- Site Favicon -->
     <!--<link rel="shortcut icon" href="favicon.ico" type="image/ico">-->
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>-->
+    <!-- <script src="js/bootstrap.min.js" type="text/javascript"></script>-->
     <!-- Bootstrap CSS -->
-	<link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Icofont Icons -->
     <link rel="stylesheet" href="css/icofont.min.css">
@@ -32,30 +32,13 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
         type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Custom  CSS -->
     <link rel="stylesheet" href="css/style.css">
-	 <link rel="stylesheet" href="css/cube.css">
     <style>
-        .transilater
-        {
-            float: right; /* top: 0px; */
-            z-index: 999;
-            overflow: hidden;
-            cursor: pointer; /* margin-top: 35px; */
-            float: left;
-            background-color: #fff;
-            border: 1px solid #bfbfbf;
-            padding: 8px 20px;
-            position: relative; /* left: 15px; */
-            border-radius: 50px;
-            margin-right: 10px;
-        }
-        
-       
-        
         /* 14-10-19 */
         
         /* FOR MODAL DIALOG */
@@ -65,7 +48,6 @@
         }
         .modal-body
         {
-          
             overflow-y: auto;
         }
         .vision
@@ -106,33 +88,133 @@
             margin-bottom: 50px;
             padding: 30px;
         }
+        .image-container
+        {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .modal-content
+        {
+            background-image: linear-gradient(to top left,#ff8a00,#e52e71) !important;
+            background: -webkit-radial-gradient(top left,circle,#4a42ec 0%,#521d91 100%);
+            background: radial-gradient(circle at top left,#4a42ec 0%,#521d91 100%);
+            background-color: #521d91;
+            box-shadow: 0 48px 48px -32px rgba(23,16,159,.2), 0 96px 96px -64px rgba(23,16,159,.4);
+            color: linear-gradient(to top left,#ff8a00,#e52e71) !important;
+        }
     </style>
 </head>
 <body>
-
-<!--  START APPOINTMENT CONFIRMATION -->
-<div class="modal fade" data-backdrop="static"  id="confirmappointment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="H1">Confirm Appointment</h5>
+    <!--MODAL WINDOW-->
+    <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered  " role="document">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title text-white " id="H2">
+                        Al Ihsan Integrated Medical Center
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 mb-2  text-dark">
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                            <div class="fa fa-1x  mb-2  text-white ">
+                                STAY HOME
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                            <div class="fa fa-1x mb-2  text-white">
+                                STAY SAFE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                            <div class="fa fa-1x  mb2 text-white">
+                                ACT RESPONSIBLY
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                            <div class="mb2  text-white">
+                                Let's talk business online, we're here to help you!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-2">
+                            <div class="mb2 text-white">
+                                For further any technical support or enquiries
+                                <br />
+                                <!--  <i class="icofont-phone"></i><a href="tel:+91 94477 87398">Call +91 8921153706</a>-->
+                                Call +91 8921153706
+                                <br />
+                                Or mail us at navabkhan.n@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light bg-light w-25" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL WINDOW-->
+    <!--  START APPOINTMENT CONFIRMATION -->
+    <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-sm  " role="document">
+            <div class="">
+                <!--<div class="modal-header">
+        <h5 class="modal-title" id="H2">Gallery</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-      Do you want to send the request ?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-light h-25 w-75 small   " data-dismiss="modal">Cancel</button>
-        <button type="button"  class="btn btn-link h-25 w-75 small" id="btnsend_request">OK</button>
-      </div>
+      </div>-->
+                <div class="modal-body image-container">
+                    <img src="" id="imgPreview" alt="" />
+                </div>
+                <!--  <div class="modal-footer">
+      
+       
+      </div>-->
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
- 
-  <!--  END  APPOINTMENT CONFIRMATION -->
+    <!--  START APPOINTMENT CONFIRMATION -->
+    <div class="modal fade" data-backdrop="static" id="confirmappointment" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="H1">
+                        Confirm Appointment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Do you want to send the request ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light h-25 w-75 small   " data-dismiss="modal">
+                        Cancel</button>
+                    <button type="button" class="btn btn-link h-25 w-75 small" id="btnsend_request">
+                        OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  END  APPOINTMENT CONFIRMATION -->
     <!--  Start ModaL Physiotherappy -->
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
@@ -190,9 +272,9 @@
                             <li><i class="fa fa-circle-o color-primary"></i><strong>Subacute lumbago</strong> -
                                 this pain can last for six weeks to three months. It is very important to treat
                                 this condition as if ignored it can become chronic.</li>
-                            <li><i class="fa fa-circle-o color-primary"></i><strong>Chronic lumbago</strong> - it
-                                lasts for more than three months and treatment of this condition is required a multidisciplinary
-                                approach.</li>
+                            <li><i class="icon icofont-addons color-primary"></i><strong>Chronic lumbago</strong>
+                                - it lasts for more than three months and treatment of this condition is required
+                                a multidisciplinary approach.</li>
                         </ul>
                         <h4>
                             Causes of Lumbago</h4>
@@ -215,10 +297,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <button type="button" class="thm-btn" data-dismiss="modal">
                         Close</button>
-                    <button type="button" class="btn btn-primary">
-                        Save changes</button>
                 </div>
             </div>
         </div>
@@ -251,7 +331,6 @@
                     <li class="nav-item"><a href="#faq" class="nav-link">FAQ's</a> </li>
                 </ul>
             </div>
-           
             <div class="contact_btn">
                 <a href="tel:+91 94477 87398" class="btn btn-sm"><i class="icofont-phone"></i>+91 94477
                     87398</a>
@@ -289,7 +368,8 @@
                             <div class="col-md-6">
                                 <div class="img-fadeInRight">
                                     <!--  <img src="images/slider-img/banner-img-01.png" class="img-fluid" alt="">-->
-                                    <img src="images/molu.png" class="img-fluid" alt="">
+                                    <!-- <img src="images/molu.png" class="img-fluid" alt="">-->
+                                    <img src="loading.gif" data-src="images/molu.png" class="lazy  " alt="">
                                 </div>
                             </div>
                         </div>
@@ -366,7 +446,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="img-fadeInRight">
-                                 <!--   <img src="images/slider-img/banner-img-01.png" class="img-fluid" alt="">-->
+                                    <!--   <img src="images/slider-img/banner-img-01.png" class="img-fluid" alt="">-->
                                 </div>
                             </div>
                         </div>
@@ -518,7 +598,8 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img src="images/about-doc-img.jpg" alt="" class="w-100 mb-30">
+                    <img src="loading.gif" data-src="images/about-doc-img.jpg" class="w-100  mb-30 lazy"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -595,7 +676,7 @@
                 <div class="col-md-4">
                     <div class="dept-box">
                         <div>
-                            <img src="images/allopathy.jpg" alt="" class="w-100">
+                            <img src="loading.gif" data-src="images/allopathy.jpg" class="w-100 lazy" alt="">
                         </div>
                         <div class="dept-details">
                             <div class="round-style">
@@ -618,7 +699,7 @@
                 <div class="col-md-4">
                     <div class="dept-box">
                         <div>
-                            <img src="images/ayurveda.jpg" alt="" class=" img-responsive w-100">
+                            <img src="loading.gif" data-src="images/ayurveda.jpg" class="w-100 lazy" alt="">
                         </div>
                         <div class="dept-details">
                             <div class="round-style">
@@ -642,7 +723,7 @@
                 <div class="col-md-4">
                     <div class="dept-box">
                         <div>
-                            <img src="images/rehabilitation.jpg" alt="" class="w-100">
+                            <img src="loading.gif" data-src="images/rehabilitation.jpg" class="w-100 lazy" alt="">
                         </div>
                         <div class="dept-details">
                             <div class="round-style">
@@ -665,7 +746,7 @@
                 <div class="col-md-4">
                     <div class="dept-box">
                         <div>
-                            <img src="images/Physiotherapy.jpg" alt="" class="w-100">
+                            <img src="loading.gif" data-src="images/Physiotherapy.jpg" class="w-100 lazy" alt="">
                         </div>
                         <div class="dept-details">
                             <div class="round-style">
@@ -687,7 +768,7 @@
                 <div class="col-md-4">
                     <div class="dept-box">
                         <div>
-                            <img src="images/hijama.jpg" alt="" class="w-100">
+                            <img src="loading.gif" data-src="images/hijama.jpg" class="w-100 lazy" alt="">
                         </div>
                         <div class="dept-details">
                             <div class="round-style">
@@ -771,7 +852,7 @@
                             </div>
                             <div class="user-txt">
                                 <div class="user-pics">
-                                  <img src="images/ui-user.png" alt=""></div>
+                                    <img src="images/ui-user.png" alt=""></div>
                                 <div class="user-info">
                                     <h6 class="heading text-white">
                                         Mariyam Sulthana</h6>
@@ -788,7 +869,7 @@
                             </div>
                             <div class="user-txt">
                                 <div class="user-pics">
-                                  <img src="images/ui-user.png" alt=""></div>
+                                    <img src="images/ui-user.png" alt=""></div>
                                 <div class="user-info">
                                     <h6 class="heading text-white">
                                         Abdul Sathar
@@ -1019,50 +1100,52 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme premises-slider">
-                        
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/01.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/01.jpg" id="images/01.jpg"
+                                    alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/02.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/02.jpg" id="images/02.jpg"
+                                    alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/03.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/03.jpg" id="images/03.jpg"
+                                    alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/04.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/04.jpg" alt="" id="images/04.jpg">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/05.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/05.jpg" alt="" id="images/05.jpg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="premises-box img">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/06.jpg" alt="" id="images/06.jpg">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/06.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/07.jpg" alt="" id="images/07.jpg">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/07.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/08.jpg" alt="" id="images/08.jpg">
                             </div>
                         </div>
                         <div class="item">
                             <div class="premises-box">
-                                <img src="images/08.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="premises-box">
-                                <img src="images/09.jpg" alt="">
+                                <img class="owl-lazy img" src="loading.gif" data-src="images/09.jpg" alt="" id="images/09.jpg">
                             </div>
                         </div>
                     </div>
@@ -1072,124 +1155,75 @@
     </section>
     <!--End Premises-->
     <!-- Start Appointment -->
-	 <section id="appointment" class="p-0">
-         <div class="appointment">
-
-			<div class="row no-gutters">
-
-				<div class="col-md-5"> 
-
-					<div class="contant-number">
-
-						<h3><i class="icofont-phone"></i> +91 94477 87398</h3>
-
-					</div>
-
-				</div>
-
-				<div class="col-md-7"> 
-
-					<div class="appointment-form">
-
-						<h2 class="title">Make an Appointment</h2>
+    <section id="appointment" class="p-0">
+        <div class="appointment">
+            <div class="row no-gutters">
+                <div class="col-md-5">
+                    <div class="contant-number">
+                        <h3>
+                            <i class="icofont-phone"></i>+91 94477 87398</h3>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="appointment-form">
+                        <h2 class="title">
+                            Make an Appointment</h2>
                         <script type="text/javascript">                            var submitted = false;</script>
-<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+                        <!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
 onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
-<!--onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
-						<form id="frm_appointment" action="https://docs.google.com/forms/d/e/1FAIpQLScelNwCGEjFHGZj6w04HnCfFyTufpT_ScazxVF0oTmU1Hf3DA/formResponse"  method="post" onsubmit="submitted=true;" >
-
-							<div class="row"> 
-
-								<div class="col-md-6"> 
-
-									<div class="form-group">
-
-										<input type="text" class="form-control" id="id_name" name="entry.2005620554" placeholder="Full Name" required="true" autocomplete="off">
-
-
-                                        
-
-									</div>
-
-								</div>
-
-								<div class="col-md-6"> 
-
-									<div class="form-group">
-
-										<input type="email" class="form-control" id="id_email" name="entry.1045781291" placeholder="Email" autocomplete="off">
-
-									</div>
-
-								</div>
-
-								<div class="col-md-6 col-lg-6"> 
-
-									<div class="form-group">
-
-										<input type="text" class="form-control" id="id_phone_number" name="entry.1065046570" placeholder="Phone Number" required="true" autocomplete="off">
-
-									</div>
-
-								</div>
-
-								<div class="col-md-2 col-lg-2 col-sm-12"> 
-
-									<div class="form-group " >
-
-										<input class="form-control form-inline" id="id_month" name="entry.839337160_month" placeholder="Month" autocomplete="off">
-                                      
-
-									</div>
-
-								</div>
-
-								<div class="col-md-2 col-lg-2 col-sm-12"> 
-                                <div class="form-group " >
-
-										
-                                        <input class="form-control " id="id_day"  name="entry.839337160_day" placeholder="Day" autocomplete="off" >
-                                       
-
-									</div>
-									
-
-								</div>
-
-								<div class="col-md-2 col-lg-2 col-sm-12"> 
-                                <div class="form-group " >
-
-										
-                                       <input class="form-control form-inline" id="id_year" name="entry.839337160_year"  placeholder="Year" autocomplete="off">
-                                       
-
-									</div>
-									
-
-								</div>
-
-							</div>
-
-							<div class="form-group">
-
-								<textarea class="form-control" rows="4" id="id_message"  name="entry.1383611224" placeholder="Message" required="true"></textarea>
-
-							</div>
-
-							<button type="submit" id="submit_appointment_request" class="btn book-now-btn">Book Now</button>
-
-						</form>
-
-					</div>
-
-				</div>
-
-			</div>
-
+                        <!--onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
+                        <form id="frm_appointment" action="https://docs.google.com/forms/d/e/1FAIpQLScelNwCGEjFHGZj6w04HnCfFyTufpT_ScazxVF0oTmU1Hf3DA/formResponse"
+                        method="post" onsubmit="submitted=true;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="id_name" name="entry.2005620554" placeholder="Full Name"
+                                        required="true" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="id_email" name="entry.1045781291" placeholder="Email"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="id_phone_number" name="entry.1065046570"
+                                        placeholder="Phone Number" required="true" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-12">
+                                <div class="form-group ">
+                                    <input class="form-control form-inline" id="id_month" name="entry.839337160_month"
+                                        placeholder="Month" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-12">
+                                <div class="form-group ">
+                                    <input class="form-control " id="id_day" name="entry.839337160_day" placeholder="Day"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-12">
+                                <div class="form-group ">
+                                    <input class="form-control form-inline" id="id_year" name="entry.839337160_year"
+                                        placeholder="Year" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" id="id_message" name="entry.1383611224" placeholder="Message"
+                                required="true"></textarea>
+                        </div>
+                        <button type="submit" id="submit_appointment_request" class="btn book-now-btn">
+                            Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-         </section>
-
-	
+    </section>
     <!-- <section id="appointment" class="p-0">
 
         <div class="appointment">
@@ -1335,7 +1369,7 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
                     <div class="section-title text-center mb-4">
                         <h2>
                             Frequently Asked</h2>
-                       <!-- <p class="section-subtitle mx-auto">
+                        <!-- <p class="section-subtitle mx-auto">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>-->
                     </div>
@@ -1409,7 +1443,7 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
                                 </div>
                             </div>
                         </div>
-            <!--            <div class="question-box shadow-sm">
+                        <!--            <div class="question-box shadow-sm">
                             <div class="faq-header p-0" id="headingFour">
                                 <h4 class="mb-0">
                                     <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
@@ -1431,7 +1465,7 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
                 </div>
                 <div class="col-md-6">
                     <div class="wow fadeIn" data-wow-duration="1500ms">
-                        <img src="images/faqs.png" class="w-100" alt="">
+                        <img src="loading.gif" data-src="images/faqs.png" class="w-100 lazy" alt="">
                     </div>
                 </div>
             </div>
@@ -1542,10 +1576,7 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
     <a href="#" class="back_top"><i class="icofont-rounded-up"></i></a>
     <div id="preloader">
     </div>
-   
-     
     <!-- Javascript -->
-     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1557,14 +1588,13 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
     <script src="js/wavify.js"></script>
     <!-- Main Js   -->
     <script src="js/aimc.js"></script>
-  <script src="js/main.js"></script>
-  
+    <script src="js/main.js"></script>
     <script type="text/jscript">
-        (function ($) {
 
-            $("#submit_appointment_request").click(function () {
-                //                $("#confirmappointment").modal('show');
-            });
+        $(document).ready(function () {
+            //(function ($) {
+            $("#myModal").modal('show');
+
             $("#btnsend_request").click(function () {
                 var name = $("#id_name").val();
                 var email = $("#id_email").val();
@@ -1594,7 +1624,9 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
                     dataType: "xml",
                     cache: false,
                     asynchronous: true,
-                    success: function () {
+                    success: function (clearcontrol) {
+                        //$(this).closest('#confirmappointment').find("input[type=text], textarea").val("");
+
                     },
                     statusCode: {
                         0: function () {
@@ -1608,19 +1640,60 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
 
                         }
                     }
+
+
                 });
+
             });
+
+
             $("#frm_appointment").submit(function (event) {
                 event.preventDefault();
                 $("#confirmappointment").modal('show');
 
-
-
-
+            });
+            $(".img").click(function (e) {
+                var id = e.target.id;
+                var modalImg = document.getElementById("imgPreview");
+                modalImg.src = e.target.id;
+                $("#modalImage").modal('show');
 
             });
 
-        })(jQuery);
+            $("#modalImage").click(function () {
+                $("#modalImage").modal('toggle');
+            });
+
+            function clearcontrol() {
+
+
+            }
+            window.onscroll = function (el) {
+                lazyload();
+            }
+            function elementinviewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            function lazyload() {
+                var lazyimage = document.getElementsByClassName('lazy');
+                for (var i = 0; i < lazyimage.length; i++) {
+                    if (elementinviewport(lazyimage[i])) {
+                        lazyimage[i].setAttribute('src', lazyimage[i].getAttribute('data-src'));
+                    }
+                }
+            }
+
+        });
+
+        //        $("#myModal").modal('show');
+        //       })(jQuery);
     </script>
 </body>
 </html>
