@@ -76,6 +76,7 @@ $(document).ready(function () {
                 nav: false,
                 loop: true,
                 margin: 0,
+				lazyLoad: true,
                 responsive: {
                     0: {
                         items: 2
