@@ -1618,6 +1618,10 @@ onload="if(submitted) {window.location='thankyou.html';}"></iframe>-->
         $(document).ready(function () {
             //(function ($) {
             $("#myModal").modal('show');
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                // do something...
+                document.getElementById('Iframe1').src = "";
+            })
 
             $("#btnsend_request").click(function () {
                 /* var name = $("#id_name").val();
@@ -1653,7 +1657,7 @@ url = "https://script.google.com/macros/s/AKfycbwImKIdPN5lDqQ8bGOJxH2uhHookwHTd7
                     asynchronous: true,
                     success: function (response) {
                         //$(this).closest('#confirmappointment').find("input[type=text], textarea").val("");
-window.location.reload()
+                        window.location.reload()
                     },
                     statusCode: {
                         0: function () {
