@@ -1,0 +1,18 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+
+body {
+font-family: 'Lobster Two', cursive;
+  background: #111;
+  content:"hi";
+  color:blue;
+  display:block;  
+}
+h1{
+ content:"hello" ;
+font-family: 'Lobster Two', cursive;
+  display:block;
+  text-align:center;
+  font-size:100px;
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: -2
